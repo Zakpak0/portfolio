@@ -1,14 +1,31 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Zakhary from "../images/zakhary.jpg"
 
+
 const Home: NextPage = () => {
+  const downloadResumeRef = useRef(null)
+  const downloadResume = () => {
+    if (downloadResumeRef.current) {
+      downloadResumeRef.current.click()
+    } else {
+      null
+    }
+  }
+  const downloadLink = new URL(window.location.href + "files/Resume.pdf")
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "whitesmoke",
+        height: "100vh",
+      }}
+    >
       <div
         style={{
           padding: 20,
+
         }}
       >
         <div
@@ -39,6 +56,7 @@ const Home: NextPage = () => {
               in identifying requirements and meeting production standards of code implementation, documentation and
               demonstration.</p>
             <button
+              onClick={downloadResume}
               style={{
                 borderRadius: "0%",
                 color: "white",
@@ -51,6 +69,14 @@ const Home: NextPage = () => {
             >
               Download Resume
             </button>
+            <a
+              download='Zakhary Oliver Resume'
+              href={downloadLink}
+              ref={downloadResumeRef}
+              style={{ display: "hidden" }}
+            >
+
+            </a>
           </div>
           <Image
             height={243}
