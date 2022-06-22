@@ -15,6 +15,7 @@ type SSR = {
 }
 
 const Home: NextPage<SSR> = ({ pluralsight }) => {
+  // Hook for grabbing URLs for use
   const { downloadLink, NGHBRLink } = useNavLinks()
   const downloadResumeRef = useRef(null)
   const downloadResume = () => {
