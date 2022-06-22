@@ -1,11 +1,21 @@
-import type { NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Zakhary from "../images/zakhary.jpg"
+import Discord from "../images/discord-brands.svg"
+import Github from "../images/github-brands.svg"
+import Linkedin from "../images/linkedin-brands.svg"
+import NGHBR from "../images/NGHBR.jpg"
+import { useNavLinks } from "../Ultilities/hooks"
 
+type SSR = {
+  pluralsight: []
 
-const Home: NextPage = () => {
+}
+
+const Home: NextPage<SSR> = ({ pluralsight }) => {
+  const { downloadLink, NGHBRLink } = useNavLinks()
   const downloadResumeRef = useRef(null)
   const downloadResume = () => {
     if (downloadResumeRef.current) {
@@ -14,14 +24,8 @@ const Home: NextPage = () => {
       null
     }
   }
-  const downloadLink = new URL(window.location.href + "files/Resume.pdf")
   return (
-    <div
-      style={{
-        backgroundColor: "whitesmoke",
-        height: "100vh",
-      }}
-    >
+    <div>
       <div
         style={{
           padding: 20,
@@ -49,8 +53,7 @@ const Home: NextPage = () => {
                 width: "50%",
               }}
             >
-              <h1>Hi, I am Zakhary,</h1>
-              <h1>a Full Stack Developer</h1>
+              <h1>Hi, I am Zakhary, a Full Stack Developer</h1>
               <p
                 style={{
                 }}
@@ -135,25 +138,125 @@ const Home: NextPage = () => {
                 boxShadow: "0px -1px 6px #000000",
                 borderRadius: "10px",
                 minHeight: 300,
+                maxHeight: 300,
                 justifyContent: "center"
-                , display: 'flex'
+                , display: 'flex',
+                flexDirection: "column",
+                overflow: "scroll",
+                alignItems: "center",
+                padding: 10
               }}
             >
-              {[{ title: "title" }].map(({ title }) => {
+              {pluralsight.map(({ title }) => {
                 return (
                   <h4>{title}</h4>
                 )
               })}
             </div>
           </div>
+          <div
+            style={{
+              display: "flex",
+              width: "50%",
+              flexDirection: "row",
+              justifyContent: "space-evenly"
+            }}
+          >
+            <a
+              href='https://github.com/Zakpak0'
+              target="_blank"
+            >
+              <Image src={Github} height={70} width={70} />
+            </a>
+            <a
+              href='https://discord.com/users/Zakpak0#5264'
+              target="_blank"
+            >
+              <Image src={Discord} height={70} width={70} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/zakhary-oliver-81141b211/'
+              target="_blank"
+            >
+              <Image src={Linkedin} height={70} width={70} />
+            </a>
+          </div>
+
         </div>
-        <div>
-          Projects
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center"
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "center",
+              display: "flex"
+            }}>
+            <h3>
+              My Projects
+            </h3>
+          </div>
+          <div
+            style={{
+              width: "60%",
+              alignItems: 'center',
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "row"
+            }}
+          >
+            <a
+              href={NGHBRLink}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                background: "transparent",
+                textDecoration: "none",
+                alignItems: "center",
+                color: "black"
+              }}
+            >
+              <Image
+                src={NGHBR}
+                height={200}
+                width={200}
+              />
+              <h3>NGHBR</h3>
+              <h4>A React Native app built with Expo</h4>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
   )
 }
-
 export default Home
+export const getServerSideProps: GetServerSideProps<SSR> = async (context) => {
+  const pluralsight = await (async () => {
+    return await fetch("https://app.pluralsight.com/profile/data/completedcourses/83b81959-5219-4864-a1f6-00bfa47c976f").then(res => res.json()).then((courses) => {
+      return courses.map((course: { level: string, authors: [{ displayName: string }], title: string, timeCompleted: string, slug: string }) => {
+        let { level, authors, title, timeCompleted, slug } = course;
+        let { displayName } = authors[0];
+        return {
+          level,
+          displayName,
+          title,
+          timeCompleted,
+          slug
+        }
+      });
+    })
+  })()
+  return {
+    props: {
+      pluralsight
+    }
+  }
+}
