@@ -28,19 +28,30 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
     }
   }
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        width: "100%",
+        justifyContent: "center"
+      }}
+    >
       <div
         style={{
           padding: 20,
-
+          display: "flex",
+          flexDirection: "column",
+          width: "80%",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <div
           style={{
             padding: 20,
             display: 'flex',
-            width: "80%",
+            width: "100%",
             alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <div
@@ -49,14 +60,13 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
               alignItems: "center",
               display: 'flex',
               flexDirection: 'row',
+              maxWidth: 800
             }}
           >
             <div
-              style={{
-                width: "50%",
-              }}
             >
               <h1>Hi, I am Zakhary, a Full Stack Developer</h1>
+              <h2>React | React Native | Node.js</h2>
               <p
                 style={{
                 }}
@@ -67,35 +77,8 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
                 challenging problems for seniors by analysing and applying documentation to live code. Has been instrumental
                 in identifying requirements and meeting production standards of code implementation, documentation and
                 demonstration.</p>
-              <button
-                onClick={downloadResume}
-                style={{
-                  borderRadius: "0%",
-                  color: "white",
-                  backgroundColor: "#FF6464",
-                  borderWidth: "0px",
-                  height: "47px",
-                  width: "200px",
-                  cursor: "pointer"
-                }}
-              >
-                Download Resume
-              </button>
-              <a
-                download='Zakhary Oliver Resume'
-                href={downloadLink}
-                ref={downloadResumeRef}
-                style={{ display: "hidden" }}
-              >
-
-              </a>
             </div>
             <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                width: "50%",
-              }}
             >
               <Image
                 height={243}
@@ -109,7 +92,69 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
             </div>
           </div>
         </div>
-
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+            width: "60%"
+          }}
+        >
+          <div>
+            <button
+              onClick={downloadResume}
+              style={{
+                borderRadius: "0%",
+                color: "white",
+                backgroundColor: "#FF6464",
+                borderWidth: "0px",
+                height: "47px",
+                width: "200px",
+                cursor: "pointer"
+              }}
+            >
+              Download Resume
+            </button>
+            <a
+              download='Zakhary Oliver Resume'
+              href={downloadLink}
+              ref={downloadResumeRef}
+              style={{ display: "hidden" }}
+            >
+            </a>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              width: "50%"
+            }}
+          >
+            <a
+              href='https://github.com/Zakpak0'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={Github} height={70} width={70} />
+            </a>
+            <a
+              href='https://discord.com/users/Zakpak0#5264'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={Discord} height={70} width={70} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/zakhary-oliver-81141b211/'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={Linkedin} height={70} width={70} />
+            </a>
+          </div>
+        </div>
         <div
           style={{
             alignItems: "center",
@@ -138,14 +183,12 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
             </div>
             <div
               style={{
-                boxShadow: "0px -1px 6px #000000",
-                borderRadius: "10px",
                 minHeight: 300,
                 maxHeight: 300,
                 justifyContent: "center"
                 , display: 'flex',
                 flexDirection: "column",
-                overflow: "scroll",
+                overflowY: "scroll",
                 alignItems: "center",
                 padding: 10
               }}
@@ -157,37 +200,6 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
               })}
             </div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              width: "50%",
-              flexDirection: "row",
-              justifyContent: "space-evenly"
-            }}
-          >
-            <a
-              href='https://github.com/Zakpak0'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Github} height={70} width={70} />
-            </a>
-            <a
-              href='https://discord.com/users/Zakpak0#5264'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Discord} height={70} width={70} />
-            </a>
-            <a
-              href='https://www.linkedin.com/in/zakhary-oliver-81141b211/'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Linkedin} height={70} width={70} />
-            </a>
-          </div>
-
         </div>
         <div
           style={{
