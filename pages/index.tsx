@@ -16,10 +16,12 @@ type SSR = {
 
 const Home: NextPage<SSR> = ({ pluralsight }) => {
   // Hook for grabbing URLs for use
+  //@ts-ignore
   const { downloadLink, NGHBRLink } = useNavLinks()
   const downloadResumeRef = useRef(null)
   const downloadResume = () => {
     if (downloadResumeRef.current) {
+      //@ts-ignore
       downloadResumeRef.current.click()
     } else {
       null

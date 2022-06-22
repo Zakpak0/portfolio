@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from "react"
 
+//@ts-ignore
 export const useNavLinks: {
     downloadLink: URL
     NGHBRLink: URL

@@ -5,6 +5,7 @@ import { useNavLinks } from "../Ultilities/hooks";
 import BackArrow from "../images/chevron-left-solid.svg"
 
 const NGHBR: NextPage = () => {
+    //@ts-ignore
     const { homeLink } = useNavLinks()
 
     return (
@@ -37,6 +38,7 @@ const NGHBR: NextPage = () => {
                 Back</a>
             <iframe
                 src="https://appetize.io/embed/3sjww6tlle5zdwgcstw5bf3ini?device=iphone8"
+                //@ts-ignore
                 width="378px" height="800px" frameborder="0" scrolling="no"></iframe>
         </div>
     )
