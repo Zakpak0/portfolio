@@ -168,18 +168,21 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
             <a
               href='https://github.com/Zakpak0'
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image src={Github} height={70} width={70} />
             </a>
             <a
               href='https://discord.com/users/Zakpak0#5264'
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image src={Discord} height={70} width={70} />
             </a>
             <a
               href='https://www.linkedin.com/in/zakhary-oliver-81141b211/'
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image src={Linkedin} height={70} width={70} />
             </a>
