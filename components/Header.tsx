@@ -64,6 +64,7 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
     const SocialTag = ({ link, icon }: { link: string, icon: StaticImageData }) => {
         return (
             <a
+
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
