@@ -52,6 +52,10 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
         justifyContent: "center"
       }}
     >
+      <Head>
+        <title>Zakhary Oliver | Software Developer</title>
+        <link rel="icon" href="/Zak_Icon.ico" />
+      </Head>
       <div
         style={{
           padding: 20,

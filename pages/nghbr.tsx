@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useLayoutEffect, useState } from "react";
 import { useNavLinks } from "../Ultilities/hooks";
 import BackArrow from "../images/chevron-left-solid.svg"
+import Head from "next/head";
 
 const NGHBR: NextPage = () => {
     //@ts-ignore
@@ -16,6 +17,10 @@ const NGHBR: NextPage = () => {
                 justifyContent: "center"
             }}
         >
+            <Head>
+                <title>Zakhary Oliver | Software Developer</title>
+                <link rel="icon" href="/Zak_Icon.ico" />
+            </Head>
             <a
                 href={homeLink}
                 style={{
