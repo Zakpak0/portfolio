@@ -7,7 +7,10 @@ import Discord from "../images/discord-brands.svg"
 import Github from "../images/github-brands.svg"
 import Linkedin from "../images/linkedin-brands.svg"
 import NGHBR from "../images/NGHBR.jpg"
-import { useNavLinks } from "../Ultilities/hooks"
+import { useNavLinks, useProjects } from "../Ultilities/hooks"
+import ProjectThumbnail from '../components/ProjectThumbnail'
+import CourseThumbnail from '../components/CourseThumbnail'
+import Header from '../components/Header'
 
 type SSR = {
   pluralsight: []
@@ -18,6 +21,7 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
   // Hook for grabbing URLs for use
   //@ts-ignore
   const { downloadLink, NGHBRLink } = useNavLinks()
+  const projects = useProjects()
   const downloadResumeRef = useRef(null)
   const downloadResume = () => {
     if (downloadResumeRef.current) {
@@ -26,6 +30,19 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
     } else {
       null
     }
+  }
+  const me = {
+    name: "Zakhary Oliver",
+    skills: ["React", "React Native", "Node.js"],
+    image: Zakhary,
+    occupation: "Software Developer",
+    location: "Maui, Hawai'i",
+    resume: downloadResume,
+    socials: [
+      { link: 'https://github.com/Zakpak0', icon: Github },
+      { link: 'https://discord.com/users/Zakpak0#5264', icon: Discord },
+      { link: 'https://www.linkedin.com/in/zakhary-oliver-81141b211/', icon: Linkedin }
+    ]
   }
   return (
     <div
@@ -45,7 +62,7 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
           alignItems: "center",
         }}
       >
-        <div
+        {/* <div
           style={{
             padding: 20,
             display: 'flex',
@@ -91,115 +108,45 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
               />
             </div>
           </div>
+        </div> */}
+        <a
+          download='Zakhary Oliver Resume'
+          href={downloadLink}
+          ref={downloadResumeRef}
+          style={{ display: "hidden" }}
+        >
+        </a>
+        <Header {...me} />
+        <div
+          className='font-bold text-2xl'
+          style={{
+            width: "100%",
+            justifyContent: "center",
+            display: "flex"
+          }}>
+          <h3
+            style={{
+              fontWeight: "bold",
+              width: "100%",
+              textAlign: "center",
+            }}
+          >Some of the Courses I've completed</h3>
         </div>
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gridTemplateRows: "1fr 1fr 1fr",
+            gap: "10px 10px",
+            maxHeight: 500,
+            width: "100%",
+            overflowY: "scroll",
             alignItems: "center",
-            width: "60%"
+            justifyItems: "center",
+            padding: 30
           }}
         >
-          <div>
-            <button
-              onClick={downloadResume}
-              style={{
-                borderRadius: "0%",
-                color: "white",
-                backgroundColor: "#FF6464",
-                borderWidth: "0px",
-                height: "47px",
-                width: "200px",
-                cursor: "pointer"
-              }}
-            >
-              Download Resume
-            </button>
-            <a
-              download='Zakhary Oliver Resume'
-              href={downloadLink}
-              ref={downloadResumeRef}
-              style={{ display: "hidden" }}
-            >
-            </a>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              width: "50%"
-            }}
-          >
-            <a
-              href='https://github.com/Zakpak0'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Github} height={70} width={70} />
-            </a>
-            <a
-              href='https://discord.com/users/Zakpak0#5264'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Discord} height={70} width={70} />
-            </a>
-            <a
-              href='https://www.linkedin.com/in/zakhary-oliver-81141b211/'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={Linkedin} height={70} width={70} />
-            </a>
-          </div>
-        </div>
-        <div
-          style={{
-            alignItems: "center",
-            display: 'flex',
-            flexDirection: 'row',
-          }}
-        >
-          <div
-            style={{
-              width: 600,
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                width: "100%",
-              }}
-            >
-              <h3
-                style={{
-                  fontWeight: "bold",
-                  width: "100%",
-                  textAlign: "center",
-                }}
-              >Some of the Courses I've done</h3>
-            </div>
-            <div
-              style={{
-                minHeight: 300,
-                maxHeight: 300,
-                justifyContent: "center"
-                , display: 'flex',
-                flexDirection: "column",
-                overflowY: "scroll",
-                alignItems: "center",
-                padding: 10
-              }}
-            >
-              {pluralsight.map(({ title }) => {
-                return (
-                  <h4>{title}</h4>
-                )
-              })}
-            </div>
-          </div>
+          {pluralsight.map((course) => <CourseThumbnail {...course} />)}
         </div>
         <div
           style={{
@@ -207,10 +154,17 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            alignItems: "center"
+            alignItems: "center",
+            padding: 20,
+            margin: 10,
+            marginTop: 0,
+            boxSizing: "border-box",
+            backgroundColor: "whitesmoke",
+            boxShadow: "0px 8.76px 26.28px rgba(31, 31, 51, 0.06)",
           }}
         >
           <div
+            className='font-bold text-2xl'
             style={{
               width: "100%",
               justifyContent: "center",
@@ -222,32 +176,18 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
           </div>
           <div
             style={{
-              width: "60%",
+              width: "100%",
               alignItems: 'center',
               display: "flex",
               justifyContent: "center",
-              flexDirection: "row"
+              flexDirection: "row",
+              padding: 20,
+              boxSizing: "border-box",
             }}
           >
-            <a
-              href={NGHBRLink}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                background: "transparent",
-                textDecoration: "none",
-                alignItems: "center",
-                color: "black"
-              }}
-            >
-              <Image
-                src={NGHBR}
-                height={200}
-                width={200}
-              />
-              <h3>NGHBR</h3>
-              <h4>A React Native app built with Expo</h4>
-            </a>
+            {
+              projects.map(project => <ProjectThumbnail {...project} />)
+            }
           </div>
         </div>
       </div>
@@ -267,7 +207,8 @@ export const getServerSideProps: GetServerSideProps<SSR> = async (context) => {
           displayName,
           title,
           timeCompleted,
-          slug
+          slug,
+          site: { name: "Pluralsight", website: "https://www.pluralsight.com/" }
         }
       });
     })

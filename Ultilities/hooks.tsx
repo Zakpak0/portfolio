@@ -1,4 +1,6 @@
 import { useLayoutEffect, useState } from "react"
+import NGHBR from "../images/NGHBR.jpg"
+
 
 //@ts-ignore
 export const useNavLinks: {
@@ -22,4 +24,17 @@ export const useNavLinks: {
         NGHBRLink,
         homeLink
     }
+}
+
+export const useProjects = () => {
+    const { NGHBRLink } = useNavLinks()
+    return [
+        {
+            link: NGHBRLink,
+            image: NGHBR,
+            title: "NGHBR",
+            caption: "A React Native app built with Expo",
+            description: ""
+        }
+    ]
 }
