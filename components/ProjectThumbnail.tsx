@@ -7,7 +7,7 @@ const ProjectThumbnail: thisType = ({ link, image, title, caption, description }
     return (
         <div
             className="p-2 group transition duration-200
-        ease-in transform sm:hover:scale-105 hover:z-50 rounded-lg"
+        ease-in transform sm:hover:scale-105 rounded-lg"
             style={{
                 height: 537,
                 width: 327,

@@ -27,8 +27,8 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
                         marginLeft: 5,
                         color: "#A0ABB8",
                         fontSize: "12px",
-                        fontWeight: 400,
-                        lineHeight: "16px"
+                        fontWeight: 1000,
+                        lineHeight: "16px",
                     }}>
                     {label}
                 </p>
@@ -53,7 +53,8 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
                     style={{
                         color: "#727272",
                         fontSize: "14px",
-                        lineHeight: "12px"
+                        lineHeight: "12px",
+                        fontWeight: 500
                     }}
                 >
                     {label}
@@ -76,8 +77,11 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
     return (
         <div
             style={{
+                zIndex: 20,
                 height: 173,
-                width: 867
+                width: 867,
+                borderBottomRightRadius: 10,
+                borderBottomLeftRadius: 10
             }}
         >
             <div
@@ -116,6 +120,7 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
                                 fontSize: "18px",
                                 lineHeight: "22px",
                                 color: "#37404E",
+                                textShadow: "2px 2px #0000",
                                 marginLeft: 10
                             }}
                         >{name}</h3>

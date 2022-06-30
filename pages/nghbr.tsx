@@ -19,8 +19,9 @@ const NGHBR: NextPage = () => {
             style={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column"
+                justifyContent: "space-evenly",
+                marginRight: "auto",
+                flexDirection: "row"
             }}
         >
             <Head>
@@ -50,36 +51,64 @@ const NGHBR: NextPage = () => {
             <div
                 style={{
                     display: "flex",
-                    flexDirection: "row",
+                    flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center"
                 }}
             >
-                {gallery.map((image, index) => {
-                    return (
-                        <div style={{
-                            marginLeft: index > 0 && 20
-                        }}>
-                            <Image
-
-                                src={image}
-                                height={406}
-                                width={190}
-                            />
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column"
+                    }}
+                >
+                    <h1
+                        className="font-bold text-2xl text-center"
+                    >Try it out</h1>
+                    <div
+                        style={{ display: "flex", flexDirection: "row", padding: 30, width: "100%", alignItems: "center", justifyContent: "space-evenly" }}
+                    >
+                        <p className="font-semibold text-lg pr-10">
+                            Login Credentials :
+                        </p>
+                        <div className="h-20 flex flex-col justify-around">
+                            <p>Username: Mockuser1@gmail.com</p>
+                            <p>Password: 123Mockuser!</p>
                         </div>
+                    </div>
+                </div>
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }}
+                >
+                    {gallery.map((image, index) => {
+                        return (
+                            <div style={{
+                                marginLeft: index > 0 && 20
+                            }}>
+                                <Image
 
-                    )
-                })}
+                                    src={image}
+                                    height={406}
+                                    width={190}
+                                />
+                            </div>
+
+                        )
+                    })}
+                </div>
             </div>
             <iframe
                 style={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: "solid"
+                    padding: 29,
                 }}
-                src="https://appetize.io/embed/3sjww6tlle5zdwgcstw5bf3ini?device=iphone8"
+                src="https://appetize.io/embed/zwvlwx7mppljbkr3gduk776usq?device=iphone8"
                 //@ts-ignore
                 width="378px" height="800px" frameborder="0" scrolling="no"></iframe>
         </div>

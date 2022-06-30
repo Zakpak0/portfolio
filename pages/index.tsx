@@ -56,17 +56,7 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
         position: "relative"
       }}
     >
-      {/* <div
-        style={{
-          position: "absolute",
-          height: "100%",
-          background: "",
-          width: "100%"
-        }}
-      >
-        <Overview />
-      </div> */}
-
+      <Overview />
       <Head>
         <title>Zakhary Oliver | Software Developer</title>
         <link rel="icon" href="/Zak_Icon.ico" />
