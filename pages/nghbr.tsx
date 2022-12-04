@@ -1,11 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { useLayoutEffect, useState } from "react";
-import { useNavLinks } from "../Ultilities/hooks";
-import BackArrow from "../images/chevron-left-solid.svg"
-import Login from "../images/Login.png"
-import SignUp from "../images/Signup.png"
-import Aroundme from "../images/Aroundme.png"
+import { useNavLinks } from "internals/hooks";
+import {BackArrow, Login, SignUp, Aroundme} from "internals/images"
 import Head from "next/head";
 import Link from "next/link";
 

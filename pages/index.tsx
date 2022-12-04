@@ -1,16 +1,10 @@
 import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import Zakhary from "../images/zakhary.jpg"
-import Discord from "../images/discord-brands.svg"
-import Github from "../images/github-brands.svg"
-import Linkedin from "../images/linkedin-brands.svg"
-import { useNavLinks, useProjects } from "../Ultilities/hooks"
-import ProjectThumbnail from '../components/ProjectThumbnail'
-import CourseThumbnail from '../components/CourseThumbnail'
-import Header from '../components/Header'
-import Overview from '../components/Overview'
+import { useRef } from 'react'
+import {Zakhary, Discord, Github, Linkedin} from "internals/images"
+import { useNavLinks, useProjects } from "internals/hooks"
+import {ProjectThumbnail, CourseThumbnail} from "components/elements"
+import {Header, Overview} from "components/sections"
 import Link from 'next/link'
 
 type SSR = {
