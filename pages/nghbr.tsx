@@ -7,6 +7,7 @@ import Login from "../images/Login.png"
 import SignUp from "../images/Signup.png"
 import Aroundme from "../images/Aroundme.png"
 import Head from "next/head";
+import Link from "next/link";
 
 const NGHBR: NextPage = () => {
     //@ts-ignore
@@ -28,7 +29,7 @@ const NGHBR: NextPage = () => {
                 <title>Zakhary Oliver | Software Developer</title>
                 <link rel="icon" href="/Zak_Icon.ico" />
             </Head>
-            <a
+            <Link
                 href={homeLink}
                 style={{
                     position: "absolute",
@@ -47,7 +48,7 @@ const NGHBR: NextPage = () => {
                     height={20}
                     width={20}
                 />
-                Back</a>
+                Back</Link>
             <div
                 style={{
                     display: "flex",

@@ -6,13 +6,12 @@ import Zakhary from "../images/zakhary.jpg"
 import Discord from "../images/discord-brands.svg"
 import Github from "../images/github-brands.svg"
 import Linkedin from "../images/linkedin-brands.svg"
-import Email from "../images/envelope-solid.svg"
-import NGHBR from "../images/NGHBR.jpg"
 import { useNavLinks, useProjects } from "../Ultilities/hooks"
 import ProjectThumbnail from '../components/ProjectThumbnail'
 import CourseThumbnail from '../components/CourseThumbnail'
 import Header from '../components/Header'
 import Overview from '../components/Overview'
+import Link from 'next/link'
 
 type SSR = {
   pluralsight: []
@@ -71,60 +70,13 @@ const Home: NextPage<SSR> = ({ pluralsight }) => {
           alignItems: "center",
         }}
       >
-        {/* <div
-          style={{
-            padding: 20,
-            display: 'flex',
-            width: "100%",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            style={{
-              justifyContent: 'space-evenly',
-              alignItems: "center",
-              display: 'flex',
-              flexDirection: 'row',
-              maxWidth: 800
-            }}
-          >
-            <div
-            >
-              <h1>Hi, I am Zakhary, a Full Stack Developer</h1>
-              <h2>React | React Native | Node.js</h2>
-              <p
-                style={{
-                }}
-              >Diverse Software Engineer cultured in the agile process with a strong command of in demand skill sets.
-                Contributed ideas and solutions that consistently impressed seniors by combining their critique with initiative
-                and knowledge to create polished final products. Created internal and external tools using web programming
-                technologies such as Javascript, React, HTML/HTML5, CSS/CSS3, Node.js, JSON and Mongodb. Cracked
-                challenging problems for seniors by analysing and applying documentation to live code. Has been instrumental
-                in identifying requirements and meeting production standards of code implementation, documentation and
-                demonstration.</p>
-            </div>
-            <div
-            >
-              <Image
-                height={243}
-                width={243}
-                style={{
-                  borderRadius: '100%'
-                }}
-                layout="fixed"
-                src={Zakhary}
-              />
-            </div>
-          </div>
-        </div> */}
-        <a
+        <Link
           download='Zakhary Oliver Resume'
           href={downloadLink}
           ref={downloadResumeRef}
           style={{ display: "hidden" }}
         >
-        </a>
+        </Link>
         <Header {...me} />
         <div
           style={{

@@ -3,11 +3,11 @@ import NGHBR from "../images/NGHBR.jpg"
 
 
 //@ts-ignore
-export const useNavLinks: {
+export function useNavLinks(): {
     downloadLink: URL
     NGHBRLink: URL
     homeLink: URL
-} = () => {
+} {
     const [windowAvailable, setWindowAvailable] = useState(false)
     const [basePath, setBasePath] = useState('')
     useLayoutEffect(() => {
@@ -16,9 +16,9 @@ export const useNavLinks: {
         const basePath = window.location.href.replace(pathname, "")
         setBasePath(basePath)
     }, [])
-    const downloadLink = windowAvailable ? new URL(basePath + "files/Resume.pdf") : null
-    const NGHBRLink = windowAvailable ? new URL(basePath + "nghbr") : null
-    const homeLink = windowAvailable ? new URL(basePath) : null
+    const downloadLink = windowAvailable ? new URL(basePath + "files/Resume.pdf") : "" as any
+    const NGHBRLink = windowAvailable ? new URL(basePath + "nghbr") : "" as any
+    const homeLink = windowAvailable ? new URL(basePath) : "" as any
     return {
         downloadLink,
         NGHBRLink,
@@ -26,7 +26,7 @@ export const useNavLinks: {
     }
 }
 
-export const useProjects = () => {
+export function useProjects(): any[] {
     const { NGHBRLink } = useNavLinks()
     return [
         {

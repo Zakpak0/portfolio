@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
 import React, { ReactElement, useState } from "react"
 import Job from "../images/job.png"
 import Location from "../images/location.png"
@@ -64,14 +65,14 @@ const Header: thisType = ({ image, name, occupation, location, skills, resume, s
     }
     const SocialTag = ({ link, icon }: { link: string, icon: StaticImageData }) => {
         return (
-            <a
+            <Link
 
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <Image src={icon} height={18} width={18} />
-            </a>
+            </Link>
         )
     }
     return (

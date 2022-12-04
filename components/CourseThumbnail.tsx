@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
 import React, { ReactElement, useState } from "react"
 type thisType = ({ displayName, level, timeCompleted, title, slug, site: { name, website } }: { displayName: string, level: string, timeCompleted: string, title: string, slug: string, site: { name: string, website: string } }) => JSX.Element
 
@@ -96,7 +97,7 @@ const CourseThumbnail: thisType = ({ displayName, level, timeCompleted, title, s
                             marginTop: 10
                         }}
                     >
-                        <a
+                        <Link
                             style={{
                                 color: "rgba(1, 128, 0, 0.5)",
                                 fontWeight: "bold",
@@ -105,7 +106,7 @@ const CourseThumbnail: thisType = ({ displayName, level, timeCompleted, title, s
                             }}
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={website}>{name}</a>
+                            href={website}>{name}</Link>
                     </div>
                 </div>
 
