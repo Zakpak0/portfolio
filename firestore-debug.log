@@ -1,0 +1,329 @@
+Jun 05, 2023 2:14:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://192.168.1.16:9150
+API endpoint: http://192.168.1.16:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=192.168.1.16:8080
+
+Dev App Server is now running.
+
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:14:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:14:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:14 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:14 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:17 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:17 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:18 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:14:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jun 05, 2023 2:14:35 PM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.channel.AbstractChannel$AnnotatedSocketException: Can't assign requested address: /192.168.1.16:61187
+Caused by: java.net.BindException: Can't assign requested address
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
+	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
+	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:322)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:653)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
+	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
+	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:655)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:632)
+	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:616)
+	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
+	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
+	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Jun 05, 2023 2:14:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+Jun 05, 2023 2:17:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+Jun 05, 2023 2:17:27 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:17:29 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:17:48 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:17:50 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:20:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:20:15 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:21:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:21:41 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:21:44 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:21:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:23:46 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:23:46 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:25:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+Jun 05, 2023 2:25:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:25:42 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:27:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+Jun 05, 2023 2:27:47 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:27:47 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+Jun 05, 2023 2:28:21 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+Jun 05, 2023 2:28:23 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+*** shutting down gRPC server since JVM is shutting down
+*** server shut down

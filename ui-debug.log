@@ -1,0 +1,872 @@
+Web / API server started at 192.168.1.16:4000
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}
+FetchError: request to http://127.0.0.1:4400/emulators failed, reason: connect EADDRNOTAVAIL 127.0.0.1:4400 - Local (0.0.0.0:0)
+    at ClientRequest.<anonymous> (/Users/zakpak0/.cache/firebase/emulators/ui-v1.11.6/server/server.js:40037:14)
+    at ClientRequest.emit (node:events:513:28)
+    at Socket.socketErrorListener (node:_http_client:502:9)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EADDRNOTAVAIL',
+  code: 'EADDRNOTAVAIL',
+  erroredSysCall: 'connect'
+}

@@ -1,12 +1,11 @@
-import { NextPage } from "next";
+'use client';
 import Image from "next/image";
 import { useNavLinks } from "internals/hooks";
-import {BackArrow, Login, SignUp, Aroundme} from "internals/images"
+import { BackArrow, Login, SignUp, Aroundme } from "internals/images"
 import Head from "next/head";
 import Link from "next/link";
 
-const NGHBR: NextPage = () => {
-    //@ts-ignore
+export const NghbrPage = function () {
     const { homeLink } = useNavLinks()
 
     const gallery = [Login, SignUp, Aroundme]
@@ -111,5 +110,3 @@ const NGHBR: NextPage = () => {
         </div>
     )
 }
-
-export default NGHBR
