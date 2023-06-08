@@ -1,100 +1,190 @@
 package main
 
 import (
+	"crypto/rand"
+	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"net/http"
+	"sync"
 
 	"golang.org/x/net/websocket"
 )
 
+type Message struct {
+	client  string
+	message string
+}
+
 type Client struct {
-	ws         *websocket.Conn
 	identifier string
+	ws         *websocket.Conn
 }
 
 type Room struct {
-	clients   map[string]*Client
-	broadcast chan string
+	messages chan Message
+	mu       *sync.Mutex
+	clients  map[string]*Client
+}
+type Rooms struct {
+	rooms map[string]*Room
+	mu    *sync.Mutex
 }
 
 func main() {
-	rooms := make(map[string]*Room)
-	http.Handle("/websocket", websocket.Handler(func(ws *websocket.Conn) {
-		fmt.Println("New WebSocket connection", ws)
-		roomID := ws.Request().URL.Query().Get("room")
-		clientID := ws.Request().URL.Query().Get("client")
-
-		room := getOrCreateRoom(roomID, rooms)
-		var client *Client
-		if room.clients[clientID] != nil {
-			room.clients[clientID].ws.Close()
-			room.clients[clientID] = &Client{
-				ws:         ws,
-				identifier: clientID,
+	r := Rooms{
+		rooms: make(map[string]*Room),
+		mu:    &sync.Mutex{},
+	}
+	http.Handle("/websocket", websocket.Server{
+		Handler: websocket.Handler(func(ws *websocket.Conn) {
+			roomID := ws.Request().URL.Query().Get("room")
+			clientID := ws.Request().URL.Query().Get("client")
+			fmt.Printf("New client %s wants to join room %s\n", clientID, roomID)
+			mu := sync.Mutex{}
+			var wg sync.WaitGroup
+			var room *Room
+			r.mu.Lock()
+			if _, ok := r.rooms[roomID]; ok {
+				fmt.Printf("Room %s already exists, adding client to room \n", roomID)
+				room = r.rooms[roomID]
+			} else {
+				fmt.Printf("Room %s does not exist, creating room \n", roomID)
+				room = &Room{
+					messages: make(chan Message),
+					mu:       &mu,
+					clients:  make(map[string]*Client),
+				}
+				r.rooms[roomID] = room
 			}
-			client = room.clients[clientID]
-		} else {
-			room.clients[clientID] = &Client{
-				ws:         ws,
-				identifier: clientID,
+			r.mu.Unlock()
+			id, err := generateRandomString(16)
+			if err != nil {
+				fmt.Printf("Error generating random string: %s\n", err)
+				error, err := json.Marshal(map[string]string{
+					"error": "Error generating random string",
+				})
+				if err != nil {
+					fmt.Printf("Error marshalling error message: %s\n", err)
+				}
+				websocket.Message.Send(ws, string(error))
 			}
-			client = room.clients[clientID]
-		}
-		room.broadcast <- fmt.Sprintf("New user joined the room: %s", client.identifier)
+			fmt.Printf("Client %s does not exist in room %s\n", id, roomID)
+			client := &Client{
+				identifier: id,
+				ws:         ws,
+			}
+			room.mu.Lock()
+			room.clients[id] = client
+			room.mu.Unlock()
+			fmt.Printf("Creating new client list for room %s\n", roomID)
+			wg.Add(1)
+			go func() {
+				defer wg.Done()
+				for {
+					if len(room.clients) == 0 {
+						if r.rooms[roomID] != nil {
+							r.mu.Lock()
+							delete(r.rooms, roomID)
+							fmt.Printf("Room %s has been deleted because it has %d clients\n", roomID, len(room.clients))
+							r.mu.Unlock()
+						}
+						break
+					}
+					var msg string
+					err := websocket.Message.Receive(client.ws, &msg)
+					if msg == "" {
+						continue
+					}
+					if err != nil {
+						fmt.Printf("WebSocket connection closed by the client: %s\n", client.identifier)
+						if room.clients[client.identifier] != nil {
+							err := ws.Close()
+							if err != nil {
+								fmt.Printf("Error closing websocket connection: %s\n", err)
+							}
+							room.mu.Lock()
+							delete(room.clients, client.identifier)
+							room.mu.Unlock()
+							fmt.Printf("Room %s has been deleted because it has %d clients\n", roomID, len(room.clients))
+							if r.rooms[roomID] != nil {
+								fmt.Printf("Client %s deleted from room %s\n", client.identifier, roomID)
+								fmt.Printf("Room %s has %d clients\n", roomID, len(room.clients))
+							}
+						}
+					}
+					room.messages <- Message{
+						client:  client.identifier,
+						message: msg,
+					}
+				}
+			}()
+			for m := range room.messages {
+				if len(room.clients) == 0 {
+					if r.rooms[roomID] != nil {
+						r.mu.Lock()
+						delete(r.rooms, roomID)
+						fmt.Printf("Room %s has been deleted because it has %d clients\n", roomID, len(room.clients))
+						r.mu.Unlock()
+					}
+					break
+				}
+				if m.client == client.identifier {
+					continue
+				}
+				err := websocket.Message.Send(client.ws, m.message)
+				if err != nil {
+					fmt.Printf("WebSocket connection closed by the client: %s\n", client.identifier)
+					fmt.Println(err.Error())
+					if room.clients[client.identifier] != nil {
+						err := ws.Close()
+						if err != nil {
+							fmt.Printf("Error closing websocket connection: %s\n", err)
+						}
+						room.mu.Lock()
+						delete(room.clients, client.identifier)
+						room.mu.Unlock()
+						if r.rooms[roomID] != nil {
+							fmt.Printf("Client %s deleted from room %s\n", client.identifier, roomID)
+							fmt.Printf("Room %s has %d clients\n", roomID, len(room.clients))
+						}
+					}
 
-		go handleWebSocketConnection(client, room)
-	}))
+				}
+			}
+		}),
+		Handshake: func(config *websocket.Config, req *http.Request) error {
+			if req.URL.Query().Get("room") == "" {
+				return fmt.Errorf("Room ID is required")
+			}
+			if req.URL.Query().Get("client") == "" {
+				return fmt.Errorf("Client ID is required")
+			}
+			return nil
+		},
+	})
 
 	err := http.ListenAndServe(":5000", nil)
 	if err != nil {
 		panic("ListenAndServe: " + err.Error())
 	}
 }
+func generateRandomString(length int) (string, error) {
+	// Calculate the number of bytes needed to generate the random string
+	byteLength := (length * 6) / 8
 
-func getOrCreateRoom(roomID string, rooms map[string]*Room) *Room {
-	if room, ok := rooms[roomID]; ok {
-		return room
+	// Generate random bytes
+	randomBytes := make([]byte, byteLength)
+	_, err := rand.Read(randomBytes)
+	if err != nil {
+		return "", err
 	}
 
-	room := &Room{
-		clients:   make(map[string]*Client),
-		broadcast: make(chan string),
-	}
-	rooms[roomID] = room
+	// Convert the random bytes to a base64 string
+	randomString := base64.URLEncoding.EncodeToString(randomBytes)
 
-	go func() {
-		for {
-			message := <-room.broadcast
-			for _, client := range room.clients {
-				err := websocket.Message.Send(client.ws, message)
-				if err != nil {
-					fmt.Println("Error sending message:", err)
-				}
-			}
-		}
-	}()
+	// Trim any excess characters to match the desired length
+	randomString = randomString[:length]
 
-	return room
-}
-
-func handleWebSocketConnection(client *Client, room *Room) {
-	// for {
-	// 	var message string
-	// 	err := websocket.Message.Receive(client.ws, &message)
-	// 	if err != nil {
-	// 		if err == io.EOF {
-	// 			fmt.Printf("WebSocket connection closed by the client: %s\n", client.identifier)
-	// 		} else {
-	// 			fmt.Println("Error receiving message:", err)
-	// 		}
-	// 		break
-	// 	}
-
-	// 	room.broadcast <- fmt.Sprintf("[%s]: %s", client.identifier, message)
-	// }
-	fmt.Print("Closing WebSocket connection...")
-	fmt.Print(client.ws.IsClientConn())
-	// delete(room.clients, client)
-	// client.ws.Close()
-	// room.broadcast <- fmt.Sprintf("User left the room: %s", client.identifier)
+	return randomString, nil
 }
