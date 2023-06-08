@@ -1,34 +1,56 @@
 'use client';
 
-import { FlexProps, Flex } from "@chakra-ui/react";
+import { FlexProps, Flex, Textarea } from "@chakra-ui/react";
 import { TextEditor } from "components/v1/Cms";
 import { Nav } from "components/v1/Cms/Nav";
 import { useMQ } from "lib/v1/Theme";
-import { useEffect } from 'react'
-let socket: WebSocket
+import { useEffect, useRef, useState } from 'react'
 export type SSP = {
     fields: [string, string[]][]
 }
 export const CmsHomePage = function ({ fields }: SSP) {
     const mq = useMQ()
     const { enumX } = mq
+    const socket = useRef<WebSocket>()
     useEffect(() => {
         socketInitializer()
         return () => {
-            if (!socket) return
-            socket.close()
+            if (!socket.current) return
+            socket.current.close()
+            socket.current = undefined
         }
     }, [])
-
+    function send(message: Record<string, any>) {
+        if (!socket.current) return
+        socket.current.send(JSON.stringify(message))
+    }
+    function receive(message: Record<string, any>) {
+        if (!socket.current) return
+        try {
+            console.log(JSON.parse(message.data))
+        } catch (e) {
+            console.log(e, message?.data)
+        }
+    }
     const socketInitializer = async () => {
-        const url = new URL('ws://192.168.1.16:5000/websocket')
+        const url = new URL('ws://192.168.1.10:5000/websocket')
         url.searchParams.append('room', '1')
         url.searchParams.append('client', '1')
-        socket = new WebSocket(url)
-        if (!socket) return
-        socket.onopen = () => {
+        socket.current = new WebSocket(url)
+        if (!socket.current) return
+        socket.current.onopen = () => {
             console.log('socket opened')
-            socket.send('hello')
+            if (!socket.current) return
+            if (socket.current.readyState === WebSocket.OPEN) {
+                console.log('socket ready')
+                socket.current.send(JSON.stringify({ type: 'hello' }))
+            }
+        }
+        socket.current.onmessage = (e) => {
+            receive(e)
+        }
+        socket.current.onerror = (e) => {
+            console.log(e)
         }
     }
     const dict = {}
@@ -36,6 +58,12 @@ export const CmsHomePage = function ({ fields }: SSP) {
         <Flex
             flexDirection={enumX<FlexProps["flexDirection"]>({ mobile: "row", tablet: "row", web: "row", tv: "row" })}
         >
+            <Textarea
+                onChange={(e) => {
+                    if (!socket) return
+                    send({ type: e.target.value })
+                }
+                } />
             <Nav
                 {...{ dict, fields, mq }}
             />
